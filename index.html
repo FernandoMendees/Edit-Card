@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca virtual</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="card-register">
+            <header class="header-card">
+                <h2>Adicione um livro</h2>
+            </header>
+
+            <hr>
+
+            <form class="form-item" id="formItem">
+                <label for="">Nome</label>
+                <input type="text" id="bookTitle" placeholder="Harry Potter" required>
+
+                <label for="">Autor</label>
+                <input type="text" id="authorName" placeholder="J.K. Rowling" required>
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section class="list-books">
+            <header class="header-card">
+                <h2>Seus livros</h2>
+            </header>
+
+            <hr>
+
+            <section class="empty-state hidden">
+                <p>Você ainda não registrou nenhum livro...</p>
+            </section>
+
+            <div class="item">
+                <div class="content">
+                    <label for="editBook"> &#128214; </label>
+                    <span id="spanTitle">Livro</span>
+                    <input type="text" id="editBook" class="input hidden">
+                </div>
+
+                <hr>
+
+                <div class="content">
+                    <label for="editBook"> &#128100; </label>
+                    <span id="editAuthor">Autor</span>
+                    <input type="text" id="editAuthor" class="input hidden">
+                </div>
+                <button class="button edit" id="editItem">Editar</button>
+                <button class="button cancel hidden" id="cancelEdit">Cancelar</button>
+            </div>
+            
+            
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
