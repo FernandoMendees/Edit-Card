@@ -37,34 +37,22 @@
 
             <hr>
 
-            <section class="empty-state hidden">
+            <section class="empty-state hidden" id="empty-state">
                 <p>Você ainda não registrou nenhum livro...</p>
             </section>
 
-            <div class="item">
-                <div class="content">
-                    <label for="editBook"> &#128214; </label>
-                    <span id="spanTitle">Livro</span>
-                    <input type="text" id="editBook" class="input hidden">
-                </div>
-
-                <hr>
-
-                <div class="content">
-                    <label for="editBook"> &#128100; </label>
-                    <span id="editAuthor">Autor</span>
-                    <input type="text" id="editAuthor" class="input hidden">
-                </div>
-                <button class="button edit" id="editItem">Editar</button>
-                <button class="button cancel hidden" id="cancelEdit">Cancelar</button>
-            </div>
-            
-            
+            <section class="list" >
+                <ul id="list">
+                </ul>
+            </section>
 
         </section>
 
     </main>
 
 </body>
+
+<script type="module" src="main.js" defer></script>
+<script type="module" src="functions.js" defer></script>
 
 </html>
